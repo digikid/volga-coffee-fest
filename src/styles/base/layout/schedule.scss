@@ -1,0 +1,36 @@
+@import '../../partials';
+
+.schedule {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-align: left;
+    margin: 40px 0;
+
+    @include mo(xs) {
+        margin: 20px 0;
+    }
+
+    &__item {
+        display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
+        @include font-size(15, 18);
+        margin: 15px 50px;
+
+        @include ms(xl) {
+            margin: 10px 30px;
+        }
+
+        @include mo(xs) {
+            margin: 7px 15px;
+        }
+    }
+
+    &__icon {
+        @include font-size(20, 32);
+        margin-right: 10%;
+    }
+}

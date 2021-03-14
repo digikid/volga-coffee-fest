@@ -1,0 +1,33 @@
+@import '../../partials';
+
+.socials {
+    text-align: center;
+
+    &__title {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__item {
+        font-size: 36px;
+        margin: 15px;
+
+        a {
+            display: inline-block;
+            color: $yellow;
+            text-decoration: none;
+            @include transition(transform, opacity);
+
+            @include hover() {
+                opacity: .6;
+                transform: scale(.95);
+            }
+        }
+    }
+}

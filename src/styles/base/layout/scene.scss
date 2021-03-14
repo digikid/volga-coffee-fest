@@ -1,0 +1,36 @@
+@import '../../partials';
+
+.scene {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    &__layer {
+        position: absolute;
+        @include bg-filler();
+
+        &--1 {
+            top: 45%;
+            right: 0;
+            width: 50%;
+            padding-bottom: 50%;
+            background-image: url('../images/plant-top.png');
+            background-position: top right;
+
+            @include mo(xs) {
+                top: 35%;
+            }
+        }
+
+        &--2 {
+            bottom: 0;
+            left: 0;
+            width: 50%;
+            padding-bottom: 50%;
+            background-image: url('../images/plant-bottom.png');
+            background-position: bottom left;
+        }
+    }
+}

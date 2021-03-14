@@ -1,0 +1,61 @@
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__wrapper container">
+                <div class="footer__schedule schedule">
+                    <div class="schedule__item schedule__item--date">
+                        <i class="schedule__icon icon icon--calendar"></i>
+                        <span class="schedule__text">10 апреля 2021</span>
+                    </div>
+                    <div class="schedule__item schedule__item--time">
+                        <i class="schedule__icon icon icon--time"></i>
+                        <span class="schedule__text">12:00 - 20:00</span>
+                    </div>
+                    <div class="schedule__item schedule__item--location">
+                        <i class="schedule__icon icon icon--location"></i>
+                        <span class="schedule__text">КРЦ Звезда</span>
+                    </div>
+                </div>
+                <div class="footer__address">г. Самара, ул. Ново-Садовая, 106Г <a target="_blank" href="https://yandex.ru/maps/-/CCUQfKx-lB">Посмотреть на карте</a></div>
+                <div class="footer__map">
+                    <div class="map js-map" id="#location"></div>
+                </div>
+                <div class="footer__contacts">
+                    <a class="footer__contact footer__logo" target="_blank" href="https://xn--80aaacdshc1bybzad0q.xn--p1ai/">
+                        <img src="images/mosaic-coffee.png" alt="MOSAIC сoffee & tea" title="MOSAIC сoffee & tea" />
+                    </a>
+                    <div class="footer__socials">
+                        @@include('components/socials.html', {
+                            "title": "Следите за новостями фестиваля<br/> в социальных сетях",
+                            "items": [{
+                                "icon": "vk",
+                                "href": "https://vk.com/volgacoffeefest"
+                            }, {
+                                "icon": "instagram",
+                                "href": "https://www.instagram.com/mosaic.coffee/"
+                            }, {
+                                "icon": "www",
+                                "href": "https://xn--80aaacdshc1bybzad0q.xn--p1ai/"
+                            }]
+                        })
+                    </div>
+                    <div class="footer__contact footer__phones">
+                        <a class="footer__phone" href="tel:+78002227927">8 800 222-79-27</a>
+                        <a class="footer__phone" href="tel:+79023208020">7 902 320-80-20</a>
+                    </div>
+                </div>
+                <div class="footer__copyright copyright">
+                    <p>2021 &copy; Компания «MOSAIC сoffee & tea»<br/>Все права защищены</p>
+                    <p>Разработано в <a target="_blank" href="https://megamir.ru/">МегаМир</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JS -->
+    <!-- inject:js --><!-- endinject -->
+
+</body>
+
+</html>

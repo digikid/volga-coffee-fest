@@ -1,0 +1,46 @@
+@import '../../partials';
+
+.about {
+    &__title {
+        @include font-size(18, 24);
+        font-weight: bold;
+        color: $white;
+    }
+
+    &__header,
+    &__footer {
+        text-align: center;
+    }
+
+    &__description {
+        strong {
+            font-weight: 600;
+            color: $yellow;
+        }
+    }
+
+    &__content {
+        margin-top: 5%;
+
+        ul {
+            @include ml(lg) {
+                max-width: 90%;
+            }
+        }
+    }
+
+    &__footer {
+        margin-top: 3%;
+
+        p {
+            i {
+                @include font-size(26, 36);
+                color: $blue;
+            }
+        }
+    }
+}
+
+.section--cuptasters {
+    padding: 7% 0;
+}

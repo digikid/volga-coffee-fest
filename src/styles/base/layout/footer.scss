@@ -1,0 +1,150 @@
+@import '../../partials';
+
+.footer {
+    position: relative;
+    background: linear-gradient(to bottom, rgba($black, .0001), $black);
+
+    @include mo(xs) {
+        background: transparent;
+        padding-top: 20px;
+    }
+
+    &__contacts {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include ms(md) {
+            flex-direction: column;
+            margin: 20px 0;
+        }
+    }
+
+    &__socials {
+        @include ms(md) {
+            order: 1;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__logo {
+        width: 20%;
+
+        @include ms(md) {
+            width: 200px;
+            order: 2;
+        }
+    }
+
+    &__phones {
+        @include ms(md) {
+            order: 3;
+            margin-top: 20px;
+        }
+    }
+
+    &__phone {
+        position: relative;
+        display: block;
+        text-decoration: none;
+        @include font-size(18, 22);
+        font-weight: bold;
+        color: $cyan;
+        padding-left: 40px;
+
+        @include mo(xs) {
+            padding-left: 30px;
+        }
+
+        @include icomoon(phone) {
+            position: absolute;
+            top: 10px;
+            left: 0;
+
+            @include mo(xs) {
+                top: 5px;
+            }
+        }
+    }
+
+    &__copyright {
+        padding: 40px 0 60px;
+
+        @include ms(md) {
+            padding: 20px 0 40px;
+        }
+
+        p {
+            font-size: 13px;
+            text-align: center;
+            color: rgba($white, .3);
+            margin: 7px 0;
+
+            a {
+                color: rgba($yellow, .3);
+
+                @include hover() {
+                    color: $yellow;
+                }
+            }
+        }
+    }
+
+    &__address {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        color: $blue;
+
+        @include ms(md) {
+            font-size: 18px;
+        }
+
+        a {
+            display: block;
+            font-weight: normal;
+            font-size: 85%;
+            margin-top: 7px;
+        }
+    }
+
+    &__map {
+        position: relative;
+        width: 100%;
+        padding-bottom: 50%;
+        margin: 50px 0;
+        overflow: hidden;
+
+        @include mo(xs) {
+            padding-bottom: 100%;
+            margin: 30px 0 40px;
+        }
+
+        .map {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 20px;
+            overflow: hidden;
+
+            *[class^="ymaps"] [class$="inner-panes"]:before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                display: block;
+                background: $black !important;
+                mix-blend-mode: color;
+                z-index: 999;
+
+                .is-mobile & {
+                    content: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,179 @@
+@import '../partials';
+
+// @import '../../../node_modules/normalize.css/normalize';
+
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    text-rendering: optimizeLegibility;
+    text-size-adjust: 100%;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font: #{$font-size}/#{$line-height} $font-family;
+    color: $text;
+    background: $body-background;
+
+    &:before {
+        display: none;
+        visibility: hidden;
+
+        @each $breakpoint, $width in $breakpoints {
+            @include mo(#{$breakpoint}) {
+                content: '#{$breakpoint}';
+            }
+        }
+    }
+}
+
+a,
+button {
+    @include transition(color, border-color, background, opacity);
+}
+
+a {
+    color: $primary;
+    text-decoration: none;
+    outline: 0 !important;
+
+    @include hover() {
+        color: lighten($primary, 10%);
+        text-decoration: none;
+    }
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+svg {
+    fill: none;
+}
+
+ul,
+ol {
+    list-style: none;
+
+    &, li {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+code {
+    font-size: 70%;
+    color: $primary;
+    vertical-align: middle;
+    margin: 0 5px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    background: $gray-200;
+}
+
+hr {
+    height: 1px;
+    border: 0;
+    background-color: $gray-200;
+}
+
+figure {
+    overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: bold;
+    line-height: 1.35;
+    margin-bottom: 1.5rem;
+
+    @include mo(xs) {
+        margin-bottom: 1rem;
+    }
+}
+
+h2, h3, h4, h5, h6,
+.h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Amatic SC', cursive;
+}
+
+h1, .h1 {
+    @include ms(lg) {
+        font-size: 2rem;
+    }
+}
+
+h2, .h2 {
+    @include font-size(40, 50);
+
+    @include mo(xs) {
+        text-align: center;
+    }
+}
+
+h3, .h3 {
+    font-size: 1.5rem;
+}
+
+h4, .h4 {
+    font-size: 1.35rem;
+}
+
+h5, .h5 {
+    font-size: 1.15rem;
+}
+
+p, ul {
+    margin: 30px 0;
+}
+
+p {
+    @include font-size(18, 20);
+
+    a {
+        text-decoration: underline;
+    }
+}
+
+i {
+    font-family: 'Amatic SC', cursive;
+    font-style: normal;
+}
+
+ul {
+    li {
+        position: relative;
+        padding-left: 50px;
+        margin-bottom: 18px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @include icomoon(check) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 150%;
+            color: $green;
+        }
+    }
+}

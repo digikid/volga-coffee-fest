@@ -10,7 +10,7 @@
                     </div>
                     <div class="schedule__item schedule__item--time">
                         <i class="schedule__icon icon icon--time"></i>
-                        <span class="schedule__text">12:00 - 20:00</span>
+                        <span class="schedule__text">10:00 - 20:00</span>
                     </div>
                     <div class="schedule__item schedule__item--location">
                         <i class="schedule__icon icon icon--location"></i>
@@ -45,6 +45,12 @@
                         <a class="footer__phone" href="tel:+79023208020">7 902 320-80-20</a>
                     </div>
                 </div>
+                <div class="footer__partners partners">
+                    <h2 class="partners__heading">Партнеры фестиваля</h2>
+                    <div class="partners__grid">
+                        @@loop('items/partners.html', '/data/partners.json')
+                    </div>
+                </div>
                 <div class="footer__copyright copyright">
                     <p>2021 &copy; Компания «MOSAIC сoffee & tea»<br/>Все права защищены</p>
                     <p>Разработано в <a target="_blank" href="https://megamir.ru/">МегаМир</a></p>
@@ -55,6 +61,23 @@
 
     <!-- JS -->
     <!-- inject:js --><!-- endinject -->
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+       m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+       (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+       ym(73796920, "init", {
+            clickmap:true,
+            trackLinks:true,
+            accurateTrackBounce:true,
+            webvisor:true,
+            trackHash:true
+       });
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/73796920" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
 </body>
 

@@ -1,0 +1,33 @@
+[{
+    "id": 1,
+    "thumb": "images/partners/partners-01.png",
+    "href": "https://vk.com/recordsamara"
+}, {
+    "id": 2,
+    "thumb": "images/partners/partners-02.png",
+    "href": "https://www.instagram.com/coffeebar_academia/"
+}, {
+    "id": 3,
+    "thumb": "images/partners/partners-03.png",
+    "href": "http://baristacoffee.ru/"
+}, {
+    "id": 4,
+    "thumb": "images/partners/partners-04.png",
+    "href": "https://www.greencof.ru/ru"
+}, {
+    "id": 5,
+    "thumb": "images/partners/partners-05.png",
+    "href": "https://www.opti-com.ru/"
+}, {
+    "id": 6,
+    "thumb": "images/partners/partners-06.png",
+    "href": "https://neftcoffee.ru/"
+}, {
+    "id": 7,
+    "thumb": "images/partners/partners-07.png",
+    "href": "http://cultcoffee.ru/"
+}, {
+    "id": 8,
+    "thumb": "images/partners/partners-08.png",
+    "href": "http://www.gourmetstyle.ru/"
+}]

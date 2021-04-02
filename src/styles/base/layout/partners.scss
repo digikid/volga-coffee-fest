@@ -1,0 +1,49 @@
+@import '../../partials';
+
+.partners {
+    margin-top: 50px;
+
+    @include ms(md) {
+        margin-bottom: 30px;
+    }
+
+    &__heading {
+        @include font-size(50, 72);
+        text-align: center;
+        color: $blue;
+    }
+
+    &__grid {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    &__item {
+        width: 25%;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+
+        @include ms(md) {
+            width: 50%;
+            margin-bottom: 0;
+        }
+    }
+
+    &__wrapper {
+        @include transition(opacity);
+
+        @include hover() {
+            opacity: .5;
+        }
+    }
+
+    &__thumb {
+        width: 70%;
+        height: auto;
+    }
+}

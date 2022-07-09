@@ -1,7 +1,7 @@
 {
   "name": "volga-coffee-fest",
   "version": "1.5.0",
-  "description": "Автоматизированная сборка HTML проекта",
+  "description": "Official promo page for Volga Coffee Fest event",
   "main": "gulpfile.js",
   "dependencies": {
     "@babel/runtime": "^7.12.5",
